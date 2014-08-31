@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DontForget", "DontForget\DontForget.csproj", "{E74E4337-90C2-4276-9704-CF97E7F3498E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DontForget.Test", "DontForget.Test\DontForget.Test.csproj", "{293E0714-E364-455E-84A5-7EC211957DF5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,14 @@ Global
 		{E74E4337-90C2-4276-9704-CF97E7F3498E}.Release|x86.ActiveCfg = Release|x86
 		{E74E4337-90C2-4276-9704-CF97E7F3498E}.Release|x86.Build.0 = Release|x86
 		{E74E4337-90C2-4276-9704-CF97E7F3498E}.Release|x86.Deploy.0 = Release|x86
+		{293E0714-E364-455E-84A5-7EC211957DF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{293E0714-E364-455E-84A5-7EC211957DF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{293E0714-E364-455E-84A5-7EC211957DF5}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{293E0714-E364-455E-84A5-7EC211957DF5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{293E0714-E364-455E-84A5-7EC211957DF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{293E0714-E364-455E-84A5-7EC211957DF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{293E0714-E364-455E-84A5-7EC211957DF5}.Release|ARM.ActiveCfg = Release|Any CPU
+		{293E0714-E364-455E-84A5-7EC211957DF5}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
