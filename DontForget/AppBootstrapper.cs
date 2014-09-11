@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Windows.Controls;
 using Caliburn.Micro;
+using Caliburn.Micro.BindableAppBar;
 
 namespace DontForget
 {
@@ -42,7 +44,10 @@ namespace DontForget
 
         private static void AddCustomConventions()
         {
-            // ellided  
+            ConventionManager.AddElementConvention<BindableAppBarButton>(
+                Control.IsEnabledProperty, "DataContext", "Click");
+            ConventionManager.AddElementConvention<BindableAppBarMenuItem>(
+                Control.IsEnabledProperty, "DataContext", "Click");
         }
     }
 }
