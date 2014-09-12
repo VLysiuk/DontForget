@@ -137,6 +137,12 @@
   <data name="AppBarMenuItemText" xml:space="preserve">
     <value>Menu Item</value>
   </data>
+  <data name="AboutText" xml:space="preserve">
+    <value>about</value>
+  </data>
+  <data name="AddText" xml:space="preserve">
+    <value>add</value>
+  </data>
   <data name="MyListsText" xml:space="preserve">
     <value>my lists</value>
   </data>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Windows.Controls;
 using Caliburn.Micro;
 using Caliburn.Micro.BindableAppBar;
+using DontForget.ViewModels;
 
 namespace DontForget
 {
@@ -22,6 +23,7 @@ namespace DontForget
             if (!Execute.InDesignMode)
             {
                 _container.RegisterPhoneServices(RootFrame);
+                _container.PerRequest<MainViewModel>();
             }
 
             AddCustomConventions();

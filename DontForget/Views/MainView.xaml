@@ -6,6 +6,7 @@
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:bab="clr-namespace:Caliburn.Micro.BindableAppBar;assembly=Caliburn.Micro.BindableAppBar"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
@@ -31,8 +32,17 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-
+  
         </Grid>
+        <bab:BindableAppBar x:Name="AppBar" IsVisible="True">
+            <bab:BindableAppBarButton x:Name="AddItem"
+                                  Text="{Binding Path=LocalizedResources.AddText, Source={StaticResource LocalizedStrings}}"
+                                  IconUri="\Assets\Tiles\appbar.add.rest.png"
+                                  />
+            <bab:BindableAppBarMenuItem x:Name="AboutItem"
+                                  Text="{Binding Path=LocalizedResources.AboutText, Source={StaticResource LocalizedStrings}}"
+                                  />
+        </bab:BindableAppBar>
     </Grid>
 
 </phone:PhoneApplicationPage>
