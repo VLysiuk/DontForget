@@ -1,5 +1,5 @@
 ﻿<phone:PhoneApplicationPage
-    x:Class="DontForget.Views.MainView"
+    x:Class="DontForget.Views.EditListView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
@@ -23,24 +23,29 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}"
+            <TextBlock Text="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}" 
                        Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock Text="{Binding Path=LocalizedResources.MyListsText, Source={StaticResource LocalizedStrings}}" 
-                       Margin="9,-7,0,0" 
-                       Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-  
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBox Grid.Row="0"/>
+            <ListBox Grid.Row="1"/>
         </Grid>
+
         <bab:BindableAppBar x:Name="AppBar" IsVisible="True">
-            <bab:BindableAppBarButton x:Name="AddNewList"
+            <bab:BindableAppBarButton x:Name="AddItem"
                                   Text="{Binding Path=LocalizedResources.AddText, Source={StaticResource LocalizedStrings}}"
                                   IconUri="\Assets\Tiles\appbar.add.rest.png"
                                   />
-            <bab:BindableAppBarMenuItem x:Name="AboutItem"
-                                  Text="{Binding Path=LocalizedResources.AboutText, Source={StaticResource LocalizedStrings}}"
+
+            <bab:BindableAppBarButton x:Name="DeleteItem"
+                                  Text="{Binding Path=LocalizedResources.DeleteText, Source={StaticResource LocalizedStrings}}"
+                                  IconUri="\Assets\Tiles\appbar.delete.rest.png"
                                   />
         </bab:BindableAppBar>
     </Grid>
