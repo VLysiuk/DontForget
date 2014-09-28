@@ -18,6 +18,7 @@ namespace DontForget.ViewModels
 
         public void AddNewList()
         {
+            _navigationService.UriFor<EditListViewModel>().Navigate();
         }
     }
 }
