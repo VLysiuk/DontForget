@@ -104,10 +104,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
-    <Compile Include="ViewModels\EditListViewModel.cs" />
+    <Compile Include="ViewModels\NewListViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
-    <Compile Include="Views\EditListView.xaml.cs">
-      <DependentUpon>EditListView.xaml</DependentUpon>
+    <Compile Include="Views\NewListView.xaml.cs">
+      <DependentUpon>NewListView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
@@ -183,7 +183,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Page Include="Views\EditListView.xaml">
+    <Page Include="Views\NewListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

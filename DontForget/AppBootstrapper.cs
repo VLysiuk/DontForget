@@ -24,7 +24,7 @@ namespace DontForget
             {
                 _container.RegisterPhoneServices(RootFrame);
                 _container.PerRequest<MainViewModel>();
-                _container.PerRequest<EditListViewModel>();
+                _container.PerRequest<NewListViewModel>();
             }
 
             AddCustomConventions();

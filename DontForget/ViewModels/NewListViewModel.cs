@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DontForget.ViewModels
 {
-    public class EditListViewModel
+    public class NewListViewModel
     {
     }
 }

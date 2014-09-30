@@ -10,9 +10,9 @@ using Microsoft.Phone.Shell;
 
 namespace DontForget.Views
 {
-    public partial class EditListView : PhoneApplicationPage
+    public partial class NewListView : PhoneApplicationPage
     {
-        public EditListView()
+        public NewListView()
         {
             InitializeComponent();
         }
