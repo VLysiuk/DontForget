@@ -44,14 +44,14 @@
         </Grid>
 
         <bab:BindableAppBar x:Name="AppBar" IsVisible="True">
-            <bab:BindableAppBarButton x:Name="AddItem"
+            <bab:BindableAppBarButton x:Name="Accept"
                                   Text="{Binding Path=LocalizedResources.AddText, Source={StaticResource LocalizedStrings}}"
-                                  IconUri="\Assets\Tiles\appbar.add.rest.png"
+                                  IconUri="\Assets\Tiles\appbar.check.rest.png"
                                   />
 
-            <bab:BindableAppBarButton x:Name="DeleteItem"
+            <bab:BindableAppBarButton x:Name="Cancel"
                                   Text="{Binding Path=LocalizedResources.DeleteText, Source={StaticResource LocalizedStrings}}"
-                                  IconUri="\Assets\Tiles\appbar.delete.rest.png"
+                                  IconUri="\Assets\Tiles\appbar.cancel.rest.png"
                                   />
         </bab:BindableAppBar>
     </Grid>
