@@ -149,4 +149,7 @@
   <data name="DeleteText" xml:space="preserve">
     <value>delete</value>
   </data>
+  <data name="NewListText" xml:space="preserve">
+    <value>new</value>
+  </data>
 </root>

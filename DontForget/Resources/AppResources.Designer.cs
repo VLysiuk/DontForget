@@ -124,6 +124,15 @@ namespace DontForget.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to new.
+        /// </summary>
+        public static string NewListText {
+            get {
+                return ResourceManager.GetString("NewListText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to LeftToRight.
         /// </summary>
         public static string ResourceFlowDirection {
