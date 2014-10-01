@@ -1,12 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Caliburn.Micro;
 
 namespace DontForget.ViewModels
 {
-    public class NewListItemsViewModel
+    public class NewListItemsViewModel : PropertyChangedBase
     {
+        private string _listName;
+
+        public string ListName
+        {
+            get
+            {
+                return _listName;
+            }
+
+            set
+            {
+                _listName = value;
+                NotifyOfPropertyChange(() => ListName);
+            }
+        }
     }
 }

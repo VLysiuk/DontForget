@@ -36,14 +36,12 @@
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <TextBox Grid.Row="0">
+            <TextBox Grid.Row="0" x:Name="ListName">
                 <interactivity:Interaction.Behaviors>
                     <behaviors:FocusOnLoadedBehavior />
                 </interactivity:Interaction.Behaviors>
             </TextBox>
-            <ListBox Grid.Row="1"/>
         </Grid>
 
         <bab:BindableAppBar x:Name="AppBar" IsVisible="True">
