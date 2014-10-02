@@ -6,6 +6,7 @@
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:bab="clr-namespace:Caliburn.Micro.BindableAppBar;assembly=Caliburn.Micro.BindableAppBar"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
@@ -24,7 +25,7 @@
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Text="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}" 
                        Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock Text="page name" 
+            <TextBlock x:Name="ListName" 
                        Margin="9,-7,0,0" 
                        Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
@@ -33,6 +34,25 @@
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <ListBox />
         </Grid>
+
+        <bab:BindableAppBar x:Name="AppBar" IsVisible="True">
+            <bab:BindableAppBarButton x:Name="Save"
+                                  Text="{Binding Path=LocalizedResources.SaveText, Source={StaticResource LocalizedStrings}}"
+                                  IconUri="\Assets\Tiles\appbar.save.rest.png"
+                                  />
+            <bab:BindableAppBarButton x:Name="AddItem"
+                                  Text="{Binding Path=LocalizedResources.AddText, Source={StaticResource LocalizedStrings}}"
+                                  IconUri="\Assets\Tiles\appbar.add.rest.png"
+                                  />
+            <bab:BindableAppBarButton x:Name="RemoveItem"
+                                  Text="{Binding Path=LocalizedResources.DeleteText, Source={StaticResource LocalizedStrings}}"
+                                  IconUri="\Assets\Tiles\appbar.minus.rest.png"
+                                  />
+            <bab:BindableAppBarButton x:Name="Cancel"
+                                  Text="{Binding Path=LocalizedResources.CancelText, Source={StaticResource LocalizedStrings}}"
+                                  IconUri="\Assets\Tiles\appbar.cancel.rest.png"
+                                  />
+        </bab:BindableAppBar>
     </Grid>
 
 </phone:PhoneApplicationPage>

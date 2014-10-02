@@ -51,7 +51,7 @@
                                   />
 
             <bab:BindableAppBarButton x:Name="Cancel"
-                                  Text="{Binding Path=LocalizedResources.DeleteText, Source={StaticResource LocalizedStrings}}"
+                                  Text="{Binding Path=LocalizedResources.CancelText, Source={StaticResource LocalizedStrings}}"
                                   IconUri="\Assets\Tiles\appbar.cancel.rest.png"
                                   />
         </bab:BindableAppBar>
